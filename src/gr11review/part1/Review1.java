@@ -5,57 +5,25 @@ import java.io.*;
 public class Review1{
 
     public static void main(String[] args) throws IOException{
-        BufferedReader month = new BufferedReader(new InputStreamReader(System.in));
-        BufferedReader day = new BufferedReader(new InputStreamReader(System.in));
+        BufferedReader date = new BufferedReader(new InputStreamReader(System.in));
 
 
         int intMonth; 
         int intDay;
-        int intDays;
+        int intDays = 0;
+        int[] intArrCalendar = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
 
         System.out.print("Enter the month number: ");
-        intMonth = Integer.parseInt(month.readLine());
+        intMonth = Integer.parseInt(date.readLine());
 
         System.out.print("Enter the day number: ");
-        intDay = Integer.parseInt(day.readLine());
+        intDay = Integer.parseInt(date.readLine());
 
-        if(intMonth == 1){
-            intDays = intDay;
-            System.out.print(intDays);
-        }else if(intMonth == 2){
-            intDays = intDay + 31;
-            System.out.print(intDays);
-        }else if(intMonth == 3){
-            intDays = intDay + 59;
-            System.out.print(intDays);
-        }else if(intMonth == 4){
-            intDays = intDay + 90;
-            System.out.print(intDays);
-        }else if(intMonth == 5){
-            intDays = intDay + 121;
-            System.out.print(intDays);
-        }else if(intMonth == 6){
-            intDays = intDay + 151;
-            System.out.print(intDays);
-        }else if(intMonth == 7){
-            intDays = intDay + 182;
-            System.out.print(intDays);
-        }else if(intMonth == 8){
-            intDays = intDay + 213;
-            System.out.print(intDays);
-        }else if(intMonth == 9){
-            intDays = intDay + 243;
-            System.out.print(intDays);
-        }else if(intMonth == 10){
-            intDays = intDay + 274;
-            System.out.print(intDays);
-        }else if(intMonth == 11){
-            intDays = intDay + 304;
-            System.out.print(intDays);
-        }else if(intMonth == 12){
-            intDays = intDay + 3351;
-            System.out.print(intDays);
+        for (int i = 0; i < intMonth - 1; i++){
+            intDays += intArrCalendar[i];
         }
 
+        intDays += intDay;
+        System.out.println(intDays);
     }
 }

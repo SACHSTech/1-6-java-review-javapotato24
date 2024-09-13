@@ -13,7 +13,7 @@ public class Review3{
             intCount += 1;
          }
 
-         System.out.print(" \n");
+         System.out.println();
 
          intCount = 29; 
          while(intCount >= 2){ 

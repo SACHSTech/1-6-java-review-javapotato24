@@ -5,7 +5,7 @@ import java.io.*;
  * The program Review2 class gives the user a list of 4 different jokes to pick from and describes 
  * the theme of the joke to the user. The program then outputs a different joke based on the uesr input
  * 
- * This program makes use of switch cases to determin which joke to oputput basesd on the input from the user
+ * This program makes use of switch cases to determin which joke to output basesd on the input from the user
  * 
  * @author Evan Wu 
  */
@@ -23,7 +23,7 @@ public class Review2{
         //initializing the variables
         int intMenu;
 
-        //Outputing menu option to the user 
+        //Outputting menu option to the user 
         System.out.println("0 - print a joke about your hair");
         System.out.println("1 - print a joke about your feet");
         System.out.println("2 - print a joke about your clothes");

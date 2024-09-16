@@ -1,6 +1,7 @@
 package gr11review.part1;
 
 import java.io.*;
+
 /**
  * The program Review2 class gives the user a list of 4 different jokes to pick from and describes 
  * the theme of the joke to the user. The program then outputs a different joke based on the uesr input
@@ -20,7 +21,7 @@ public class Review2{
     public static void main(String[] args) throws IOException{
         BufferedReader menu = new BufferedReader(new InputStreamReader(System.in));
 
-        //initializing the variables
+        //Declaring and initializing the variables
         int intMenu;
 
         //Outputting menu option to the user 

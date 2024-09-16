@@ -9,7 +9,15 @@ public class Review7{
 
         String strSentence = sentence.readLine();
 
+        int intLength = strSentence.length();
+        String strLetter;
         
+        for(int i = 0; i < intLength; i++ ){ 
+            strLetter = strSentence.substring(i , intLength);
+            if(strLetter == " "){
+                
+            }
+        }
 
     }
 }

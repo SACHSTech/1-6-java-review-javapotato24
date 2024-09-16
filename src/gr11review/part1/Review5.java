@@ -6,7 +6,7 @@ public class Review5{
     public static void main(String[] args) throws IOException{
         BufferedReader invest = new BufferedReader(new InputStreamReader(System.in));
 
-        int intYears;
+        double dblYears;
         double dblTarget;
         double dblRate;
         double dblTotal;
@@ -16,7 +16,7 @@ public class Review5{
         intTime = 0;
 
         System.out.print("Enter the yearly invested amount: ");
-        intYears = Integer.parseInt(invest.readLine());
+        dblYears = Double.parseDouble(invest.readLine());
 
         System.out.print("Enter the compound interest rate: ");
         dblRate = Double.parseDouble(invest.readLine());
@@ -25,7 +25,7 @@ public class Review5{
         dblTarget = Double.parseDouble(invest.readLine());
 
         for(double i = 0; i < dblTarget;){
-            dblTotal += 100; 
+            dblTotal += dblYears; 
             dblTotal = dblTotal + ((dblRate / 100) * dblTotal); 
             intTime += 1;
             i = dblTotal;

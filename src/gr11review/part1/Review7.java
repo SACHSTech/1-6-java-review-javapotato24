@@ -24,10 +24,10 @@ public class Review7{
         BufferedReader sentence = new BufferedReader(new InputStreamReader(System.in));
 
         //getting user inputted sentence
-        String strSentence = sentence.readLine();
+        String theSentence = sentence.readLine();
 
         //declaring and initializing variables
-        int intLength = strSentence.length();
+        int intLength = theSentence.length();
         int intSpaces = 0;
         int intOdd = 0;
         int intA = 0;
@@ -35,13 +35,13 @@ public class Review7{
         //for loop to check each character in the sentence 
         for(int i = 0; i < intLength; i++ ){ 
             //if statements that check for spaces, letter "a", or odd characters
-            if(strSentence.charAt(i) == ' '){
+            if(theSentence.charAt(i) == ' '){
                 intSpaces += 1;
             }
             if(i%2 == 0){
                 intOdd += 1;
             }   
-            if(strSentence.charAt(i) == 'a'){
+            if(theSentence.charAt(i) == 'a'){
                 intA += 1;
             }
         }

@@ -22,9 +22,9 @@ public class Review5{
         BufferedReader invest = new BufferedReader(new InputStreamReader(System.in));
 
         //Declaring and initializing variables
-        double dblYears;
-        double dblTarget;
-        double dblRate;
+        double dblYearly_amount;
+        double dblTarget_amount;
+        double dblCompound_interest_rate;
         double dblTotal;
         int intTime;
 
@@ -33,19 +33,19 @@ public class Review5{
 
         //getting user input for their yearly investment, the compound interest rate and the target amount
         System.out.print("Enter the yearly invested amount: ");
-        dblYears = Double.parseDouble(invest.readLine());
+        dblYearly_amount = Double.parseDouble(invest.readLine());
 
         System.out.print("Enter the compound interest rate: ");
-        dblRate = Double.parseDouble(invest.readLine());
+        dblCompound_interest_rate = Double.parseDouble(invest.readLine());
 
         System.out.print("Enter the target amount: ");
-        dblTarget = Double.parseDouble(invest.readLine());
+        dblTarget_amount = Double.parseDouble(invest.readLine());
 
         //for loop that will repeat unitl the target amount of money is reached 
-        for(double i = 0; i < dblTarget;){
+        for(double i = 0; i < dblTarget_amount;){
             //calculations for yearly compound interest based on interest rate and yearly investment by uesr
-            dblTotal += dblYears; 
-            dblTotal = dblTotal + ((dblRate / 100) * dblTotal); 
+            dblTotal += dblYearly_amount; 
+            dblTotal = dblTotal + ((dblCompound_interest_rate / 100) * dblTotal); 
             intTime += 1;
             i = dblTotal;
         }
